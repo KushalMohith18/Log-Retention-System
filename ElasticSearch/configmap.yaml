@@ -10,4 +10,7 @@ data:
     xpack.security.enabled: false
     node.store.allow_mmap: false
     network.host: 0.0.0.0
-    path.repo: ["/usr/share/elasticsearch/snapshots"]
+
+    # S3 client configuration
+    s3.client.default.endpoint: s3.ap-south-1.amazonaws.com
+    s3.client.default.protocol: https
